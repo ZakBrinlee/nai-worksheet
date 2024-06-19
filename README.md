@@ -48,9 +48,9 @@ the scripting language of your choice, either Javascript or **Typescript**.
     6. Consider using a service worker to cache the main assets and improve the page load time for repeat visitors.
     7. Consider converting to a PWA to improve the user experience and provide offline access to the site.
     8. Use Semantic HTML to improve the accessibility and SEO of the page.
-      1. The `cart-container` should include a `<ul | ol>` element to list each cart item. 
-      2. Each `cart-item` should be a `<li>` element with the price and quantity as text content.
-      3. `<div>` elements containing text values should be replaced with text elements such as `<p>`, `<span>`, or `<strong>` to improve the accessibility and SEO of the page.
-      4. Utilize structure elements like `<header>`, `<main>`, `<footer>`, `<aside>`, and `<section>` to improve the readability and accessibility of the page.
-        1. `product` container is a good example of a section element.
-        2. `cart-container` could be a section or aside element depending on the context.<br>
+       1. The `cart-container` should include a `<ul | ol>` element to list each cart item. 
+       2. Each `cart-item` should be a `<li>` element with the price and quantity as text content.
+       3. `<div>` elements containing text values should be replaced with text elements such as `<p>`, `<span>`, or `<strong>` to improve the accessibility and SEO of the page.
+       4. Utilize structure elements like `<header>`, `<main>`, `<footer>`, `<aside>`, and `<section>` to improve the readability and accessibility of the page.
+          1. `product` container is a good example of a section element.
+          2. `cart-container` could be a section or aside element depending on the context.<br>
