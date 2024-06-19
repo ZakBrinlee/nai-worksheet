@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple Socks - Gizmo & Gadgets Incorporated</title>
+    
+    <style>
+        @font-face {
+            font-family: "Proxima Nova";
+            src: url("/fonts/ProximaNova.otf") format("opentype");
+        }
+
+        @font-face {
+            font-family: "Helvetica Neue";
+            src: url("/fonts/HelveticaNeue.otf") format("opentype");
+        }
+
+        body {
+            font-family: "Proxima Nova", sans-serif;
+        }
+        .cart-container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .cart-header {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .cart-item {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .item-name {
+            font-size: 18px;
+        }
+        .item-price {
+            color: #666;
+        }
+        .item-quantity {
+            color: #666;
+        }
+        .total {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: right;
+        }
+    </style>
+    <script type="text/javascript">
+        window.myUser = {"name": "Nostradamus", "cart_id": "1234"};
+    </script>
+    <script type="text/javascript">
+        window.isMobile = true;
+        window.productPage = {
+            "name": "Purple Socks",
+            "item_id": "abc",
+            "in_stock": true,
+            "inventory_available": 5
+        };
+    </script>
+    <link rel="stylesheet" href="/styles/site.css">
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/productPage.js"></script>
+</head>
+<body>
+    <div class="cart-container">
+        <div class="cart-header">Shopping Cart</div>
+        <div class="cart-item">
+            <div class="item-name">Widget A</div>
+            <div class="item-price">$15.99</div>
+            <div class="item-quantity">Quantity: 2</div>
+        </div>
+        <div class="cart-item">
+            <div class="item-name">Widget B</div>
+            <div class="item-price">$5.99</div>
+            <div class="item-quantity">Quantity: 1</div>
+        </div>
+        <div class="cart-item">
+            <div class="item-name">Widget C</div>
+            <div class="item-price">$8.99</div>
+            <div class="item-quantity">Quantity: 3</div>
+        </div>
+        <div class="cart-total">Total: <div class="js-cart-total">$-.--</div></div>
+    </div>
+    <div class="product" data-item-id="abc">
+        <img src="images/purple_socks.png" alt="Purple Socks">
+        <div class="item-name">Purple Socks</div>
+        <div class="item-price">$5.99</div>
+        <button class="js-add-to-cart">Add to Cart</button>
+        <div class="left-in-stock">Hurry! There are only 5 left!</div>
+    </div>
+</body>
+</html>
