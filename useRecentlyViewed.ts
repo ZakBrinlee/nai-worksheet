@@ -18,8 +18,9 @@ function useRecentlyViewed() {
         // assign old list to newRecentlyViewed
         newRecentlyViewed = prev;
       } else {
-        // Add new product to the list
-        newRecentlyViewed = prev.push(productId);
+        // Assign prev state and add new product to the list
+        newRecentlyViewed = prev;
+        newRectlyViewed.push(productId);
         // Limit the list to 5 items
         if (recentlyViewed.length > 5) {
           newRecentlyViewed.shift();
